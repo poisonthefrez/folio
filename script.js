@@ -104,7 +104,7 @@ window.addEventListener('load', () => {
 document.addEventListener("DOMContentLoaded", () => {
   const text = "Web • Visual • UI/UX • Motion Design";
   const speed = 50;
-  const delay = 7500;
+  const delay = 2500;
 
   const typeTarget = document.getElementById("typewriter");
   typeTarget.textContent = "";
