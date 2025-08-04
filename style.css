@@ -27,15 +27,6 @@ body.l-theme {
     background-color: white;
 }
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-    position: relative;
-}
-
 #stripes-container {
     position: fixed;
     top: 0;
@@ -325,7 +316,7 @@ body.l-theme .container4-txt {
 
     to {
         opacity: 1;
-        transform: translateY (0);
+        transform: translateY(0);
     }
 }
 
