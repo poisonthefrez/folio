@@ -1,18 +1,3 @@
-//OVERFLOW SCROLL SCRIPT
-window.addEventListener("load", function () {
-  const videoOverlay = document.getElementById("videoOverlay");
-
-  setTimeout(() => {
-    videoOverlay.style.opacity = "0";
-    setTimeout(() => {
-      videoOverlay.style.display = "none";
-      document.body.style.overflowY = "auto";
-      document.documentElement.style.overflowY = "auto"; // Y- block !
-      document.body.style.overflowX = "hidden";
-      document.documentElement.style.overflowX = "hidden";
-    }, 3000); //Time
-  }, 5000); //Time
-});
 //FADE SCROLL
 const items = document.querySelectorAll('.fade-item');
 
@@ -30,21 +15,6 @@ const observer = new IntersectionObserver((entries) => {
 
 items.forEach(item => {
   observer.observe(item);
-});
-
-//PAGE LOADER SCRIPT
-document.addEventListener("DOMContentLoaded", function () {
-  const videoOverlay = document.getElementById("videoOverlay");
-  const introVideo = document.getElementById("introVideo");
-  const content = document.querySelector(".content");
-
-  introVideo.onended = function () {
-    videoOverlay.style.opacity = "0";
-    content.style.opacity = "1";
-    setTimeout(() => {
-      videoOverlay.style.display = "none";
-    }, 2000);
-  };
 });
 
 //MENU SCRIPT (FUNCTIONS)
