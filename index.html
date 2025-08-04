@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jockey+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>THEFREZ</title>
+</head>
+
+<body>
+
+    <!--Page loader-->
+    <div class="video-overlay" id="videoOverlay">
+        <video id="introVideo" autoplay muted playsinline>
+            <source src="/video/loadpage.mp4" type="video/mp4">
+        </video>
+        <p class="loader-message">NOTICE!</br>For the full experience, please use a wide screen!</p>
+    </div>
+
+    <header>
+        <button id="burger" class="burger">
+            <span class="yin-symbol">☯</span>
+        </button>
+
+        <nav class="menu" id="menu">
+            <button id="themeToggle" class="menu-item themetoggle">☀︎</button>
+            <button class="menu-item">Contacts</button>
+            <button class="menu-item">Price List</button>
+        </nav>
+    </header>
+
+    <!--Main page-->
+    <section id="mainpage" class="mainpage fade-item">
+        <div class="mainpage-content">
+            <div class="container1 fade-item">
+                <div class="container1-txt">CREATIONS</div>
+            </div>
+            <div class="container2">
+                <div class="container2-txt">DIGITAL - DESIGN</div>
+            </div>
+            <div class="container4">
+                <div class="container4-txt" id="typewriter"></div> <!-- • -->
+            </div>
+            <div class="container3">
+                <div class="container3-txt">ART</div>
+            </div>
+            <div class="container5">
+                <img src="img/artist.png" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <!--Modal-->
+    <div id="contactModal" class="modal-overlay" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <button class="close-button" id="closeModal" aria-label="Close modal">&times;</button>
+
+            <h2>Find me here:</h2>
+
+            <!--Social 1-->
+            <div class="socialmedia-group1">
+                <a href="https://www.instagram.com/poisonthefrez/" target="_blank" class="media-item">
+                    <img src="/img/social/instagram.png" alt="Instagram" class="instagram-img" />
+                    <span class="instagram-txt">Instagram</span>
+                </a>
+
+                <a href="https://t.me/poisonthefrez" target="_blank" class="media-item">
+                    <img src="/img/social/telegram.png" alt="Telegram" class="telegram-img" />
+                    <span class="telegram-txt">Telegram</span>
+                </a>
+
+                <a href="https://www.behance.net/7e985531" target="_blank" class="media-item">
+                    <img src="/img/social/behance.png" alt="Behance" class="behance-img" />
+                    <span class="behance-txt">Behance</span>
+                </a>
+            </div>
+
+            <!-- Fields -->
+            <form id="contactForm" action="https://formspree.io/f/xdkzogal" method="POST">
+                <div class="sendmessage-group">
+                    <h3>Contact me -</h3>
+
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Ex. John Doe" required />
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ex. you@example.com" required />
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="send-button">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Notification Send Form-->
+    <div id="custom-alert" class="custom-alert" style="display:none;">
+        <span id="custom-alert-message"></span>
+    </div>
+
+    <section id="secondPage" class="secondpage fade-item">
+        <div class="secondcont1">
+            <div class="secondblock1">
+                <span class="sb1-sp1">MY CREATIONS/</span>
+                <span class="sb1-sp2">PORTFOLIO</span>
+            </div>
+
+            <!--Cards-->
+            <div class="cards fade-item" id="cards">
+                <div class="subcards">
+                    <button class="card1" id="card1">
+                        <img src="/img/hologramas/PS.png" alt="Photoshop">
+                        <span>Editing</span>
+                    </button>
+                    <button class="card2" id="card2">
+                        <img src="/img/hologramas/Figma.png" alt="Figma">
+                        <span>UI/UX Design</span>
+                    </button>
+                    <button class="card3" id="card3">
+                        <img src="/img/hologramas/Ae.png" alt="AfterEffects">
+                        <span>Animations</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Modal3-->
+    <div  class="modal3-1" id="modal3b1">
+        <div class="modal3-1-content">
+            <button class="close3">&times;</button>
+            <h2>Editing</h2>
+            <p>Some description</p>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="modal3-2" id="modal3b2">
+        <div class="modal3-2-content">
+            <button class="close3">&times;</button>
+            <h2>UI/UX Design</h2>
+            <p>WEB Sites</p>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="modal3-3" id="modal3b3">
+        <div class="modal3-3-content">
+            <button class="close3">&times;</button>
+            <h2>Animations</h2>
+            <p>Some Videos</p>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <!--Background animation(Lines)-->
+    <div id="stripes-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
